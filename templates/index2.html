@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Template is working</title>
+  </head>
+  <body>
+    <a href="/">Back</a>
+    <h1>Welcome to text analyser.Enter your text below.</h1>
+    <form action='/analyse' method='get'>
+        
+        <textarea  name='text' style="user-select: auto; width: 650px; height: 199px;"></textarea>
+        <br>
+        <input type="checkbox" name="removepunc">Remove punctuations
+        <input type="checkbox" name="fullcap">Capitalize
+        <input type="checkbox" name="newlineremover">Remove New Line 
+        <input type="checkbox" name="spaceremover">Remove Extra Space
+        <input type="checkbox" name="charcount">Count Characters<br>
+        <p><button type="submit">Analyse Text</button></p>
+    </form>
+</p>
+  </body>
+</html>
