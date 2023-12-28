@@ -22,6 +22,9 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('analyse', views.analyse, name='analyse'),
     path('ex1', views.ex1, name='ex1'),
+    path('about', views.about, name='about'),
+    path('contact', views.contact, name='contact'),
+
     #path('removepunc', views.removepunc, name='removepunc'),
 
 ]

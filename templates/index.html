@@ -13,7 +13,7 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">TextUtils</a>
+        <a class="navbar-brand" href="/">TextUtils</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -23,10 +23,10 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link" href="/about">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="/contact">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -45,9 +45,10 @@
 
 
     <div class="container">
+      <form action='/analyse' method='get'>
       <div class="mb-3">
         <label for="exampleFormControlTextarea1" class="form-label">Type your text here and see the magic!</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+        <textarea name='text' class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
       </div>
       <div class="form-check form-switch">
         <input class="form-check-input" name="removepunc" type="checkbox" id="flexSwitchCheckDefault">
@@ -70,8 +71,10 @@
         <label class="form-check-label" for="flexSwitchCheckDefault">Count of Characters</label>
       </div>
       
-        <p><button type="submit">Analyse Text</button></p>
+      <p><button type="submit" class="btn btn-dark mt-2">Analyse Text</button></p>
+    </form>
     </div>
+  
 
     <!-- Optional JavaScript; choose one of the two! -->
 

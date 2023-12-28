@@ -71,3 +71,9 @@ def ex1(request):
     <a href="www.google.com">Google anything!</a><br/>'''
     return HttpResponse(s)
 
+def about(request):
+    return render(request, 'about.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
