@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path  # important for path
 from . import views  # important for calling functions present in views
+import requests
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,6 +25,7 @@ urlpatterns = [
     path('ex1', views.ex1, name='ex1'),
     path('about', views.about, name='about'),
     path('contact', views.contact, name='contact'),
+    path('api', views.get_data_from_api, name='api')
 
     #path('removepunc', views.removepunc, name='removepunc'),
 

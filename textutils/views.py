@@ -3,6 +3,7 @@
 
 from django.http import HttpResponse
 from django.shortcuts import render  # for rendering HTML file or template
+import requests
 
 def index(request):
     return render(request, 'index.html')
@@ -76,4 +77,14 @@ def about(request):
 
 def contact(request):
     return render(request, 'contact.html')
+
+def get_data_from_api():
+    response=requests.get('https://images.unsplash.com/photo-1416339306562-f3d12fefd36f')
+    if response.status_code==200:
+        print('Success!')
+    elif response.status_code==404:
+        print('Not found.')
+    data=response.json()
+    return data
+
 
